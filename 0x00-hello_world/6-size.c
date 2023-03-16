@@ -13,11 +13,12 @@ int main(void)
 	long int longType;
 	long long int longlongType;
         
-	fprintf(stderr,"Size of char: %zu byte(s)\n", sizeof(charType));
-        fprintf(stderr,"Size of int: %zu byte(s)\n", sizeof(intType));
-        fprintf(stderr,"Size of long int: %zu byte(s)\n", sizeof(longType));
-        fprintf(stderr,"Size of long long int: %zu byte(s)\n", sizeof(longlongType));
-        fprintf(stderr,"Size of float: %zu byte(s)\n", sizeof(floatType));
+	fprintf("Size of char: %zu byte(s)\n", sizeof(charType));
+        fprintf("Size of int: %zu byte(s)\n", sizeof(intType));
+        fprintf("Size of long int: %zu byte(s)\n", sizeof(longType));
+        fprintf("Size of long long int: %zu byte(s)\n", sizeof(longlongType));
+        fprintf("Size of float: %zu byte(s)\n", sizeof(floatType));
+	fprintf(stderr,"Anything")
 	return (0);
 }
 

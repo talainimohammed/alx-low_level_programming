@@ -8,9 +8,10 @@
  */
 int main(void)
 {
-	char a[]="abcdefghijklmnopqrstuvwxyz";
+	char a[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
-	for(i=0; i < 26; i++)
+
+	for( i = 0; i < 26; i++)
 	{
 		putchar(a[i]);
 	}

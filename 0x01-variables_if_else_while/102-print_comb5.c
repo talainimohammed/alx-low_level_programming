@@ -9,16 +9,16 @@
 int main(void)
 {
 
-int i, j;
+int i, j, d1, d2, d3, d4;
 
 for (i = 0; i < 100; i++) 
 {
 	for (j = i; j < 100; j++) 
 	{
-		int d1 = i / 10;
-		int d2 = i % 10;
-		int d3 = j / 10;
-		int d4 = j % 10;
+		d1 = i / 10;
+		d2 = i % 10;
+		d3 = j / 10;
+		d4 = j % 10;
 		putchar(d1 + '0');
 		putchar(d2 + '0');
 		putchar(' ');

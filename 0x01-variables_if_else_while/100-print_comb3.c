@@ -1,26 +1,27 @@
-#include <stdlib.h>
-#include <time.h>
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * main - Prints comb of numb 00 to 89.
+ * Return: ALways 0 (Success)
  */
 int main(void)
 {
-	int a, j;
+	int a, b;
 
-	for (a = 0; a < 9; a++)
+	for (a = 48; a <= 56; a++)
 	{
-		for (j = a + 1; j <= 9; j++)
+		for (b = 49; b <= 57; b++)
 		{
-				putchar(a + '0');
-				putchar(j + '0');
-				if (a != 8 || j != 9)
+			if (b > a)
+			{
+				putchar(a);
+				putchar(b);
+				if (a != 56 || b != 57)
 				{
 					putchar(',');
 					putchar(' ');
 				}
+			}
 		}
 	}
 	putchar('\n');

@@ -1,28 +1,29 @@
-#include <stdlib.h>
-#include <time.h>
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main - Entry point
- *
+ * main - Prints numbers between 012 to 789.
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i, j, k;
+	int n, m, l;
 
-	for (i = 0; i <= 7; i++) 
+	for (n = 48; n < 58; n++)
 	{
-		for (j = i + 1; j <= 8; j++) 
+		for (m = 49; m < 58; m++)
 		{
-			for (k = j + 1; k <= 9; k++) 
+			for (l = 50; l < 58; l++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (i != 7 || j != 8 || k != 9) 
+				if (l > m && m > n)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}

@@ -5,34 +5,35 @@
  **/
 void times_table(void)
 {
-	int i, j, k;
+	int row;
+	int column;
+	int product;
 
-	for (i = 0; i < 10; i++)
+	for (row = 0; row <= 9; row++)
 	{
-		for  (j = 0; j < 10; j++)
+		for (column = 0; column <= 9; column++)
 		{
-			k = i * j;
-			if (k <= 9)
+			product = (row * column);
+
+			if (column == 0)
 			{
-				_putchar('0' + k);
-				if (j != 9)
-				{
-					_putchar (',');
-					_putchar (' ');
-					_putchar (' ');
-				}
+				_putchar('0' + product);
 			}
-			else
+			else if (product <= 9)
 			{
-				_putchar('0' + (k / 10));
-				_putchar('0' + (k % 10));
-				if (j != 9)
-				{
-					_putchar (',');
-					_putchar (' ');
-				}
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + product);
+			}
+			else if (product > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 10));
 			}
 		}
-		_putchar ('\n');
+		_putchar('\n');
 	}
 }

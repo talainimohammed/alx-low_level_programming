@@ -1,19 +1,18 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * main -  utilisation of _putchar function
- *
- * Return: value is  0.
- **/
+ * main - Entry point
+ * lets print _putchar
+ * Return: 0 (SUCCESS)
+ */
+
 int main(void)
 {
-	char a[] = "_putchar";
-	int i;
+int i = 0;
+char str[9] = "_putchar\n";
 
-	for (i = 0; i < 8; i++)
-	{
-		_putchar (a[i]);
-	}
-	_putchar ('\n');
-	return (0);
+while (i < 10)
+{
+        _putchar(str[i]);
+        i++;
 }
+return (0);

@@ -4,13 +4,12 @@
  * lets print _putchar
  * Return: 0 (SUCCESS)
  */
-
 int main(void)
 {
 int i = 0;
-char str[9] = "_putchar";
+char str[8] = "_putchar";
 
-while (i < 10)
+while (i < 8)
 {
         _putchar(str[i]);
         i++;

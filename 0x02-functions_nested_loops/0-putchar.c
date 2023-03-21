@@ -1,10 +1,9 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * main -  utilisation of _putchar function
- *
- * Return: value is  0.
- **/
+ * main - Entry point
+ * lets print _putchar
+ * Return: 0 (SUCCESS)
+ */
 int main(void)
 {
 	char a[] = "_putchar";

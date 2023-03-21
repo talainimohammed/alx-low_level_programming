@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - loop alphabet * 10
- * */
+ **/
 void print_alphabet_x10(void)
 {
 	int i, j;

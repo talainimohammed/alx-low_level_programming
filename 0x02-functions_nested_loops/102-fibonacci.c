@@ -8,16 +8,24 @@
  **/
 int main(void)
 {
-	int sum = 0;
-	int i;
-
-	for (i = 0; i < 1024; i++)
+	int n = 50;
+	int fib[50];
+        int i;
+	
+	fib[0] = 1;
+	fib[1] = 2;
+        for(i = 2; i < n; i++)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
+		fib[i] = fib[i-1] + fib[i-2];
+	}
+	for(i = 0; i < n; i++)
+	{
+		printf("%d", fib[i]);
+		if(i != n-1)
 		{
-			sum += i;
+			printf(", ");
 		}
 	}
-	printf("%d\n", sum);
-	return (0);
+	printf("\n");
+	return 0;
 }

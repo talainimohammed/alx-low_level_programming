@@ -4,6 +4,7 @@
 /**
  * main- prints the  times table.
  *
+ * Return: value 0.
  **/
 int main(void)
 {

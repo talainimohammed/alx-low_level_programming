@@ -21,22 +21,22 @@ void print_times_table(int n)
 			k = j * j;
 			if (j == 0)
 			{
-				printf("%d ", i * j);
+				printf("%d", i * j);
 			}
 			if (k < 10)
 			{
 				printf(",   ");
-				printf("%d ", i * j);
+				printf("%d", i * j);
 			}
 			else if (k > 9)
 			{
 				printf(",  ");
-				printf("%d ", i * j);
+				printf("%d", i * j);
 			}
 			else if (k > 99)
 			{
 				printf(", ");
-				printf("%d ", i * j);
+				printf("%d", i * j);
 			}
     		}
     	printf("\n");

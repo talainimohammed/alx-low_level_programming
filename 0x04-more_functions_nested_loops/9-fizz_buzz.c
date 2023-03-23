@@ -11,25 +11,25 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-        k = i % 3;
-        l = i % 5;
+		k = i % 3;
+		l = i % 5;
 		if (k == 0 && l == 0)
 		{
 			printf("FizzBuzz ");
 		}
-        else if (k == 0)
-        {
+		else if (k == 0)
+		{
 			printf("Fizz ");
 		}
-        else if (l == 0)
-        {
+		else if (l == 0)
+		{
 			printf("Buzz");
 		}
-        else 
-        {
-            printf("%d ", i);
-        }
-    }
-    printf("\n");
-    return (0);
+		else
+		{
+			printf("%d ", i);
+		}
+	}
+	printf("\n");
+	return (0);
 }

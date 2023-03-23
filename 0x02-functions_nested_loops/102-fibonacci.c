@@ -1,31 +1,27 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main- prints the  times table.
- *
- * Return: value 0.
- **/
+  * main - entry point of the program
+  *
+  * Return: always 0
+  */
 int main(void)
 {
-	int n = 50;
-	int fib[50];
-        int i;
-	
-	fib[0] = 1;
-	fib[1] = 2;
-        for(i = 2; i < n; i++)
+	unsigned long first = 1;
+	unsigned long second = 2;
+	int i = 0;
+
+	while (i < 50)
 	{
-		fib[i] = fib[i-1] + fib[i-2];
-	}
-	for(i = 0; i < n; i++)
-	{
-		printf("%d", fib[i]);
-		if(i != n-1)
+		printf("%lu", first);
+		if (i < 49)
 		{
+			second += first;
+			first = second - first;
 			printf(", ");
 		}
+		i++;
 	}
 	printf("\n");
-	return 0;
+	return (0);
 }

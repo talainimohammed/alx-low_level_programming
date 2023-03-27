@@ -21,5 +21,6 @@ void rev_string(char *s)
 		a += *(s + i);
 		i--;
 	}
+	*s = a;
 	_putchar ('\n');
 }

@@ -1,7 +1,7 @@
 #include "main.h"
-#include<stdio.h>
+
 /**
- * swap_int - check the code
+ * _strlen - check the code
  *
  * @s: input value1.
  * 
@@ -17,5 +17,5 @@ int _strlen(char *s)
         c++;
         s++;
     }
-	return (c);
+    return (c);
 }

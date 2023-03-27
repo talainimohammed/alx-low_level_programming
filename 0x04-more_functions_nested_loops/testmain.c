@@ -17,16 +17,16 @@ int main(void)
 	{
 		for (i = 0; i < n; i++)
 		{
-			for (j = 1; j <= n-i; j++)
+			for (j = 0; j <= i; j++)
 			{
-				printf(" ");
-			}
-            for (j = n-i; j <= n; j++)
-			{
-					printf("#");    
-			}
-printf("\n");
-            				
+				if (i == j)
+				{
+					printf("#");
+					printf("\n");
+				}
+				else
+					printf(" ");
+			}            				
 		}
 	}
 	return (0);

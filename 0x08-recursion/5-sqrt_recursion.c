@@ -1,28 +1,39 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion -  sqrt
- * @n: integer
- * Return: Calculated Value
+ * _helper - help function sqrt
+ * @i: i
+ * @n: n
+ * Return: helper value
+ */
+
+int _helper(int j, int n)
+{
+	if (n == 0 || n == 1)
+		return (n);
+
+	else if (j * j < n)
+		return (_helper(j + 1, n));
+
+	else if (j * j == n)
+		return (j);
+	return (-1);
+	return (-1);
+}
+/**
+ * _sqrt_recursion - Calculate sqrt
+ * @n: int number
+ * Return: Calculated value
  */
 
 int _sqrt_recursion(int n)
 {
-	int j;
+	int j = 0;
 
-    if (n < 0)
-        return (-1);
-    else if (n == 0 || n == 1)
-        return (n);
-    else
-    {
-        j = 1;
-        while (j * j <= n)
-        {
-            if (j * j == n)
-                return (j);
-            j++;
-        }
-        return (-1);
-    }
+	if (j < 0)
+		return (-1);
+	else
+	{
+		return (_helper(j, n));
+	}
 }

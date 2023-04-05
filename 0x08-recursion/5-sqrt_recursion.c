@@ -2,7 +2,7 @@
 
 /**
  * _helper - help function sqrt
- * @i: i
+ * @j: j
  * @n: n
  * Return: helper value
  */
@@ -32,6 +32,7 @@ int _sqrt_recursion(int n)
 
 	if (j < 0)
 		return (-1);
+
 	else
 	{
 		return (_helper(j, n));

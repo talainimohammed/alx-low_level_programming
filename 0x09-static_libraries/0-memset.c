@@ -1,20 +1,20 @@
 #include "main.h"
 /**
  * _memset - fill a block of memory
- * @s: starting address of memory
- * @b: the desired value
- * @n: member of bytes to be changed
+ * @s: star address memory
+ * @b: the constant byte
+ * @n: bytes of the memory area pointed
  *
- * Return: Always value
+ * Return: s value
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i = 0;
+	unsigned int j = 0;
 
-	while (i < n)
+	while (j < n)
 	{
-		*(s + i) = b;
-		i++;
+		*(s + j) = b;
+		j++;
 	}
 	return (s);
 }

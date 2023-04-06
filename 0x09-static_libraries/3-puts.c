@@ -1,12 +1,17 @@
 #include "main.h"
 
 /**
- * _puts - prints a string,followed  by a new line,to stdout
- * @str: this is my input string
- * Return: void
+ * _puts - check the code
+ *
+ * @str: input value1.
+ *
  */
-
 void _puts(char *str)
 {
-	_puts(str);
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str++;
+	}
+	_putchar ('\n');
 }

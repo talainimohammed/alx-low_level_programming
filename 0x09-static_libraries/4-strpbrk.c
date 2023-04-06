@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * _strpbrk - print the consecutive character of s1 that are inn s2
- * @s: source string
- * @accept: seaching string
+ * @s: source char
+ * @accept: seaching char
  *
  * Return: new string
  */

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print the nb of arguments 
+ * main - print the nb of arguments
  * @argc: nb arguments
  * @argv: Array Arguments
  * Return: 0 value
